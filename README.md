@@ -6,6 +6,7 @@
 
 Improt the library into gradle
 Step 1. in project gradle file
+
 		allprojects {
 		repositories {
 			...
