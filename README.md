@@ -6,17 +6,18 @@
 
 Improt the library into gradle
 Step 1. in project gradle file
-	allprojects {
+		allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
-Step 2. Add the dependency in module
+Step 2. Add the dependency
 
 	dependencies {
-		compile 'com.github.User:Repo:Tag'
+	        compile 'com.github.maulikabbacus:scrollcalendardemo:1.0.1'
 	}
+	
 ### Getting Started
 
 Define layout in your xml file
