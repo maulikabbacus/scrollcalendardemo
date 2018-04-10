@@ -1,8 +1,7 @@
-siteUrl = https://github.com/RafalManka/ScrollCalendar
-gitUrl = https://github.com/RafalManka/ScrollCalendar.git
-version = 1.0.4
-groupId = pl.rafalmanka
-artifact = scrollcalendar
-licenses = GPL-3.0
-id = com.rafalmanka.crollcalendar
-name = scrollcalendar
+siteUrl = https://github.com/maulikabbacus/scrollcalendardemo
+gitUrl = https://github.com/maulikabbacus/ScrollCalendar.git
+version = 1.0.0
+groupId = pl.maulik.widgets
+artifact = scrollcalendardemo
+id = and.scroll.calendar
+name = scrollcalendardemo

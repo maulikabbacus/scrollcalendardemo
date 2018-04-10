@@ -7,7 +7,7 @@ publish {
     groupId = "pl.maulik.widgets"
     artifactId = "scrollcalendardemo"
     publishVersion = "1.0.1"
-    desc = "Scroll Calendar widget Demo"
+    desc = "Scroll Calendar  Demo"
     website = "https://github.com/maulikabbacus/ScrollCalendarDemo"
 }
 
@@ -19,7 +19,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 6
-        versionName "1.5.1"
+        versionName "1.0.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 

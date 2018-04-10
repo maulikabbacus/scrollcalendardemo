@@ -1,24 +1,22 @@
 # Scroll Calendar
 
-[![Download](https://api.bintray.com/packages/rafalmanka/maven/scroll-calendar/images/download.svg?version=1.5.0) ](https://bintray.com/rafalmanka/maven/scroll-calendar/1.5.0/link)
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ScrollCalendar-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6228)
 
-Android widget to present calendar in a recycler view. The idea was to
-replicate calendar the way calendar is presented in the amazing
-Airbnb app.
-
-![Example App](gif.gif)
 
 ## Installing
 
 Improt the library into gradle
+Step 1. in project gradle file
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+Step 2. Add the dependency in module
 
-```
-compile 'pl.rafman.widgets:scroll-calendar:1.5.1', {
-    exclude group: 'com.android.support'
-}
-```
-
+	dependencies {
+		compile 'com.github.User:Repo:Tag'
+	}
 ### Getting Started
 
 Define layout in your xml file
@@ -79,72 +77,4 @@ scrollCalendar.setMonthScrollListener(new MonthScrollListener() {
         return true;
     }
 });
-```
-
-## Default behavior
-* Endless scrolling to the future. By default you can scroll the calendar
-Endlessly. If you want to stop adding months to the bottom of the adapter
-set MonthScrollListener callback and return false for the last month
-that you want to appear in shouldAddNextMonth method.
-* Endless scrolling to the past. By default you can not scroll to previous
-months. If you want to keep adding previous months potentially to infinity
-set MonthScrollListener callback and return true in shouldAddPreviousMonth
-method
-
-## States
-Calendar supports Different states that a day can have in a month.
-Each state can be expressed by applying specific drawable background and
-a text color.
-* CalendarDay.DEFAULT - Regular day with no background
-```
-scrollcalendar:fontColor="@android:color/black"
-```
-* CalendarDay.DISABLED - When you want to indicate that the date
-is not available.
-```
-scrollcalendar:disabledBackgroundColor="@android:color/transparent"
-scrollcalendar:disabledTextColor="@android:color/darker_gray"
-```
-* CalendarDay.TODAY - for expressing current day
-```
-scrollcalendar:currentDayBackground="@drawable/scrollcalendar_circle_outline"
-scrollcalendar:currentDayTextColor="@android:color/darker_gray"
-```
-* CalendarDay.UNAVAILABLE - when day is not available take, or invalid.
-By default this state is expressed by strikethrough.
-```
-scrollcalendar:unavailableBackground="@drawable/scrollcalendar_strikethrough"
-scrollcalendar:unavailableTextColor="@android:color/darker_gray"
-```
-* CalendarDay.SELECTED - When a day is selected. By default it's a ble
-circle with white text. In order to display ranges properly you need
-to set Beginning, middle and end drawables according to your style.
-Proper drawables will be used automatically when two or more selected
-dates are placed next to each other.
-```
-scrollcalendar:selectedBackground="@drawable/scrollcalendar_circle_full"
-scrollcalendar:selectedBackgroundBeginning="@drawable/scrollcalendar_range_start"
-scrollcalendar:selectedBackgroundEnd="@drawable/scrollcalendar_range_end"
-scrollcalendar:selectedBackgroundMiddle="@drawable/scrollcalendar_range_middle"
-scrollcalendar:selectedTextColor="@android:color/white"
-```
-
-## Contributing
-
-* File [bug report](https://github.com/RafalManka/ScrollCalendar/issues/new)
-* Request [feature](https://github.com/RafalManka/ScrollCalendar/issues/new)
-* Create [Pull request](https://github.com/RafalManka/ScrollCalendar/pulls)
-
-## Authors
-
-* **Rafal Manka** - [Linkedin](https://www.linkedin.com/in/rafał-mańka-40ba2b5b)
-
-
-## License
-
-This project is licensed under the Apache 2.0 License.
-
-## Acknowledgments
-
-* Inspiration - Airbnb
 
