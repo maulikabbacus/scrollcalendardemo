@@ -5,13 +5,11 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import calendar.scroll.demo.R;
-
-import pl.rafman.scrollcalendar.ScrollCalendar;
-import pl.rafman.scrollcalendar.contract.DateWatcher;
-import pl.rafman.scrollcalendar.contract.OnDateClickListener;
-import pl.rafman.scrollcalendar.contract.State;
-import pl.rafman.scrollcalendar.data.CalendarDay;
+import and.scroll.calendar.ScrollCalendar;
+import and.scroll.calendar.contract.DateWatcher;
+import and.scroll.calendar.contract.OnDateClickListener;
+import and.scroll.calendar.contract.State;
+import and.scroll.calendar.data.CalendarDay;
 
 import java.util.Calendar;
 

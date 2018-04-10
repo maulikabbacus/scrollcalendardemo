@@ -6,7 +6,7 @@ publish {
     userOrg = "maulik"
     groupId = "pl.maulik.widgets"
     artifactId = "scrollcalendardemo"
-    publishVersion = "1.0"
+    publishVersion = "1.0.1"
     desc = "Scroll Calendar widget Demo"
     website = "https://github.com/maulikabbacus/ScrollCalendarDemo"
 }
