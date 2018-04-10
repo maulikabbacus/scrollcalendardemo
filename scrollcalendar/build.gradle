@@ -1,11 +1,12 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
-
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.maulikabbacus'
 publish {
     userOrg = "maulik"
     groupId = "pl.maulik.widgets"
     artifactId = "scrollcalendardemo"
-    publishVersion = "1.0.0"
+    publishVersion = "1.0"
     desc = "Scroll Calendar widget Demo"
     website = "https://github.com/maulikabbacus/ScrollCalendarDemo"
 }
