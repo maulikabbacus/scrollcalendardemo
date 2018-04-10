@@ -46,7 +46,7 @@ Define layout in your xml file
 
 Reference the widget in your Activity/Fragment and set callback
 
-```java
+```java Code
 ScrollCalendar scrollCalendar = (ScrollCalendar) findViewById(R.id.scrollCalendar);
 scrollCalendar.setOnDateClickListener(new OnDateClickListener() {
     @Override
